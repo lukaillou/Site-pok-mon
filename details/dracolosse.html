@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <title>Mon Pokédex</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body class="has-background-dark">
+
+    <nav class="navbar is-black">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="../img/pokeball.png" alt="">
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="../index.html" class="navbar-item">Accueil</a>
+                <a href="../collection.html" class="navbar-item">Collection</a>
+            </div>
+
+            <div class="navbar-end">
+                <button class="button is-danger is-rounded is-outlined m-1">Mon compte</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="is-justify-content-center">
+        <div class="container is-fluid">
+            <div class="box has-background-danger-45">
+
+                <section class="is-flex is-justify-content-start">
+                    <div class="box has-background-danger-20 m-4"></div>
+                    <div class="box has-background-danger-20 m-4"></div>
+                </section>
+
+                <section class="box has-background-black">
+                    <div
+                        class="box is-flex is-justify-content-space-between has-background-link-70 is-justify-content-center">
+                        <a class="title is-3 has-text-black" href="../collection.html">
+                            <img class="icon is-large" src="../icons/angle-left-solid-full.svg" alt="Retour">
+                        </a>
+
+                        <div>
+                            <img src="../pokémon/img/full/149.png" alt="Image de Raichu">
+                            <h1 class="title is-flex is-justify-content-center has-text-black">Dracolosse</h1>
+                            <ul class="is-flex is-justify-content-space-evenly">
+                                <button class="button is-rounded has-background-link-60">
+                                    <img class="icon" src="../icons/dragon-solid-full.svg" alt="">
+                                    <p class="has-text-white">Dragon</p>
+                                </button>
+                                <button class="button is-rounded has-background-link-80">
+                                    <img class="icon" src="../icons/dove-solid-full.svg" alt="">
+                                    <p class="has-text-white">Vol</p>
+                                </button>
+                            </ul>
+                        </div>
+
+                        <h1 class="subtitle is-5 is-flex is-justify-content-end has-text-text-20">#149</h1>
+                    </div>
+
+                    <div class="box has-background-light">
+                        <div
+                            class="is-flex is-justify-content-space-around is-justify-content-center has-text-centered">
+                            <div>
+                                <img class="icon is-large" src="../icons/ruler-vertical-solid-full.svg" alt="">
+                                <h1 class="title has-text-black">2,2m</h1>
+                                <p class="subtitle">Taille</p>
+                            </div>
+                            <div>
+                                <img class="icon is-large" src="../icons/weight-hanging-solid-full.svg" alt="">
+                                <h1 class="title has-text-black">210,0kg</h1>
+                                <p class="subtitle">Poids</p>
+                            </div>
+                            <div>
+                                <img class="icon is-large" src="../icons/dna-solid-full.svg" alt="">
+                                <h1 class="title has-text-black">1</h1>
+                                <p class="subtitle">Génération</p>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column is-7">
+                                <h1 class="title pt-6 has-text-black">Statistiques</h1>
+
+                                <div class="mb-3">
+                                    <div class="level-left">
+                                        <strong class="has-text-black">PV</strong>
+                                    </div>
+                                    <div class="level-right">
+                                        <strong class="has-text-black">91</strong>
+                                    </div>
+                                    <progress class="progress is-warning" value="91" max="200"></progress>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="level-left">
+                                        <strong class="has-text-black">Attaque</strong>
+                                    </div>
+                                    <div class="level-right">
+                                        <strong class="has-text-black">134</strong>
+                                    </div>
+                                    <progress class="progress is-success" value="134" max="200"></progress>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="level-left">
+                                        <strong class="has-text-black">Défense</strong>
+                                    </div>
+                                    <div class="level-right">
+                                        <strong class="has-text-black">95</strong>
+                                    </div>
+                                    <progress class="progress is-warning" value="95" max="200"></progress>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="level-left">
+                                        <strong class="has-text-black">Vitesse</strong>
+                                    </div>
+                                    <div class="level-right">
+                                        <strong class="has-text-black">80</strong>
+                                    </div>
+                                    <progress class="progress is-warning" value="80" max="200"></progress>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h1 class="title has-text-black pt-6">Description</h1>
+                                <p class="has-text-black">Dracolosse est capable de faire le tour de la planète en seize
+                                    heures à peine. C'est un Pokémon au grand cœur qui ramène à bon port les navires
+                                    perdus dans les tempêtes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="has-text-centered">
+                            <button href="" class="box has-background-black"><img class="icon" src="../icons/trash-solid-full.svg"
+                                    alt="">
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

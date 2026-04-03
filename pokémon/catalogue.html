@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="listeCatalogue" class="catalogue"></div>
+</body>
+
+<!-- 
+Ce fichier est un exemple d'utilisation de javascript "client" pour récupérer des données dans un fichier JSON
+Le sujet ne vous demande pas de faire ça pour la sae105, il s'agit uniquement d'un exemple de qui est possible en js.
+C'est pour votre curiosité
+-->
+
+
+<script>
+    async function loadJSON(path) {
+        const response = await fetch(path);
+        const pokemonData = await response.json();
+        const domElement = document.getElementById("listeCatalogue");
+        for (let key of Object.keys(pokemonData)){
+            domElement.innerHTML += `
+            <div>
+                <img src="img/96px/${key}.png" />
+                <p>${pokemonData[key].identifier}</p>
+                <p>Height: ${pokemonData[key].height}</p>
+                <p>Weight: ${pokemonData[key].weight}</p>
+                <p>Base Experience: ${pokemonData[key].base_experience}</p>
+            </div>
+        `;
+        }
+    }
+    loadJSON("./pokemon_data.json");
+</script>
+
+<style>
+
+.catalogue{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+</style>
+
+</html>
